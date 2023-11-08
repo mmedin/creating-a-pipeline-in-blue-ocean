@@ -5,9 +5,6 @@ pipeline {
       args '-p 3000:3000'
     }
   }
-  triggers {
-    cron('H */4 * * 1-5')
-  }
   stages {
     stage('Build') {
       steps {
